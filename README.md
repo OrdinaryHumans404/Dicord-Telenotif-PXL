@@ -11,7 +11,7 @@ Buat Bot Baru:
 
   Copy code
   Use this token to access the HTTP API:
-  7413093419:AAEhK2mMBgYIfrSupygdsdoMDmOgv-kI2lo
+  7413093419:AAEhK2mMBgYIfrSupygdsdoMDmOgv-kI2lo  //CONTOH
   Salin token ini karena Anda akan membutuhkannya untuk mengakses API bot Telegram.
   
   Langkah-Langkah Mendapatkan Chat ID Telegram:
