@@ -31,9 +31,9 @@ class Pixel:
             req.raise_for_status()
             return req.json()
         except json.JSONDecodeError as e:
-            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Ada Kesalahan User {e}]")
+            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error getUsers() ]\t: {e}")
         except requests.RequestException as e:
-            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Ada Kesalahan User {e}]")
+            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error getUsers() ]\t: {e}")
 
     def getStats(self):
         url = "https://api-clicker.pixelverse.xyz/api/battles/my/stats"
@@ -42,9 +42,9 @@ class Pixel:
             req.raise_for_status()
             return req.json()
         except json.JSONDecodeError as e:
-            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Api down Boss!! {e}]\n")
+            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error getStats() ]\t: {e}")
         except requests.RequestException as e:
-            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Api down Boss!! {e} ]\n")
+            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error getStats() ]\t: {e}")
 
     def isBroken(self):
         url = "https://api-clicker.pixelverse.xyz/api/tasks/my"
@@ -53,6 +53,6 @@ class Pixel:
             req.raise_for_status()
             return req.json()
         except json.JSONDecodeError as e:
-            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error isBroken {e}")
+            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error isBroken() ]\t: {e}")
         except requests.RequestException as e:
-            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error isBroken {e}")
+            return print(f"🍓 {Fore.RED+Style.BRIGHT}[ Error isBroken() ]\t: {e}")
