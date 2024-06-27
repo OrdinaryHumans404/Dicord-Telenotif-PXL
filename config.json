@@ -1,0 +1,10 @@
+{
+  "secret": "your_secret",
+  "tgId": "your_tgId",
+  "initData": "your_initData",
+  "telegram_bot_token": "your_telegram_bot_token",
+  "telegram_chat_id": "your_telegram_chat_id",
+  "discord_webhook_url": "your_discord_webhook_url",
+  "notify_telegram": false,
+  "notify_discord": true
+}
