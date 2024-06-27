@@ -69,7 +69,7 @@ class Battle:
     async def sendHit(self):
         while not self.stop_event.is_set():
             if self.superHit:
-                await asyncio.sleep(0.5)
+                await asyncio.sleep(0.4)
                 continue
 
             content = [
@@ -82,7 +82,7 @@ class Battle:
                 await self.websocket.send(f"42{json.dumps(content)}")
             except:
                 return
-            await asyncio.sleep(0.10)
+            await asyncio.sleep(0.14)
 
     async def listenerMsg(self):
         while not self.stop_event.is_set():
