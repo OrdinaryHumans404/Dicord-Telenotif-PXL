@@ -43,7 +43,7 @@ async def main():
         await battle.connect()
         del battle
     except Exception as e:
-        print(f"🤖 {Fore.RED+Style.BRIGHT}[ Error ] {e}")
+        print(f"🤖 {Fore.RED+Style.BRIGHT}[ Error ]\t\t: {e}")
 
 if __name__ == '__main__':
     while True:
@@ -54,7 +54,7 @@ if __name__ == '__main__':
             sys.exit(0)
         except Exception as e:
             if Pixel().isBroken():
-                print(f"🤖 {Fore.RED+Style.BRIGHT}[ Error ] {e}")
+                print(f"🤖 {Fore.RED+Style.BRIGHT}[ Error ]\t\t: {e}")
                 sleep(randint(5, 10)*5)
             else:
                 print(f"🤖 {Fore.RED+Style.BRIGHT}[ Error ]\t\t: {type(e).__name__} {e}")
