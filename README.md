@@ -1,35 +1,15 @@
 # Dicort-Telenotif
 
-# GET Token Bot Telegram:
-Buka Telegram BotFather: Kunjungi https://t.me/BotFather di aplikasi atau browser Telegram Anda.
+# GET Token Telegram
+   1 Open Telegram Kunjungi https://t.me/BotFather .
 
-Buat Bot Baru:
-  Ketik /newbot untuk membuat bot baru.
-  Berikan nama untuk bot Anda.
-  BotFather akan meminta Anda memberikan username untuk bot Anda (harus diakhiri dengan "_bot", seperti @nama_bot_anda_bot).
-  Dapatkan Token Bot: Setelah bot berhasil dibuat, BotFather akan memberikan pesan seperti ini:
+   2 CRAETE NAMEBOT 
 
-  Copy code
-  Use this token to access the HTTP API:
-  7413093419:AAEhK2mMBgYIfrSupygdsdoMDmOgv-kI2lo  //CONTOH
-  Salin token ini karena Anda akan membutuhkannya untuk mengakses API bot Telegram.
-  
-  Langkah-Langkah Mendapatkan Chat ID Telegram:
-  Buka Saluran atau Chat Telegram: Anda dapat menggunakan akun Telegram Anda atau saluran tempat Anda ingin bot mengirimkan pesan.
-  
-  Dapatkan Chat ID:
-  
-  Kirim pesan ke bot yang baru Anda buat menggunakan Telegram.
-  Buka browser dan masukkan URL berikut: https://api.telegram.org/bot<TOKEN>/getUpdates, gantilah <TOKEN> dengan token bot yang telah Anda dapatkan sebelumnya.
-  Cari chat dalam respons JSON untuk menemukan id yang sesuai dengan saluran atau chat yang ingin Anda gunakan sebagai tujuan pesan bot.
-  Contoh Penyusunan Informasi dalam Format yang Diminta:
-  json
-  Copy code
-  {
-    "telegram_bot_token": "7413093419:AAEhK2mMBgYIfrSupygdsdoMDmOgv-kI2lo",
-    "telegram_chat_id": "1234567890"
-  }
-  Pastikan untuk mengganti nilai "telegram_bot_token" dan "telegram_chat_id" dengan token dan chat ID yang sesuai dengan bot dan chat yang Anda buat di Telegram.
+   3 CRATE USERANEME BOT Contoh @Pasukanperang_bot.
+
+   4 COPY VALUE TOKEN DI Letakan Pada Config JSON.
+
+   5 JANGAN LUPA NILAINYA DI TRUE UNTUK  "notify_telegram": True,  Jika ingin Di Kirimkan Ke tele Dan Di False Jika tidak ingin Di Kirimkan
 
 # GET Discord Webhook URL
    1 Open Discord Server: Buka server Discord di mana Anda ingin membuat webhook.
